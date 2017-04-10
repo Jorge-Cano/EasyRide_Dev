@@ -3,7 +3,8 @@ var router = express.Router();
 var Driver = require('../models/driver')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/:id', function(req, res, next) {
+  id = req.params.id;
   Driver.findById(id, function(err, driver){
     if (err) {
       console.log("Driver.findById error: ", err);
@@ -18,6 +19,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next){
   var newDriver = new Driver({
+    Auth0_id: req.body.auth0_id,
     first: req.body.first,
     last: req.body.last,
     phone: req.body.phone,
@@ -48,6 +50,8 @@ router.post('/', function(req, res, next){
 
 router.put('/', function(req, res, next){
   Driver.findByIdAndUpdate(req.body.id, {
+    Auth0_id: req.body.auth0_id,
+    _id: req.body.id,
     first: req.body.first,
     last: req.body.last,
     phone: req.body.phone,
