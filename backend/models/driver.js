@@ -12,7 +12,7 @@ var driverSchema = new mongoose.Schema({
   zip: { type: Number, required: true },
   able_door_to_door: { type: Boolean, required: true },
   able_wheelchair: { type: Boolean, required: true },
-  able_bag_help: { type: Boolean, required: true }
+  able_bag_help: { type: Boolean, required: true },
   vehicle_type: { type: String, required: true },
 
 

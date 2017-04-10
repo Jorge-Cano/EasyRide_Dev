@@ -1,12 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/user')
-
+var Driver = require('../models/driver')
 
 /* GET home page. */
 router.get('/:id', function(req, res, next) {
   id = req.params.id;
-  User.findById(id, function(err, driver){
+  Driver.findById(id, function(err, driver){
     if (err) {
       console.log("Driver.findById error: ", err);
     } else {
@@ -19,23 +18,22 @@ router.get('/:id', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-  var newUser = new User({
+  var newDriver = new Driver({
     Auth0_id: req.body.auth0_id,
     first: req.body.first,
     last: req.body.last,
     phone: req.body.phone,
     email: req.body.email,
     zip: req.body.zip,
-    cc: req.body.cc,
-    ex_date: req.body.ex_date,
-    door_to_door: req.body.door_to_door,
-    wheelchair: req.body.wheelchair,
-    bag_help: req.body.bag_help
+    able_door_to_door: req.body.able_door_to_door,
+    able_wheelchair: req.body.able_wheelchair,
+    able_bag_help: req.body.able_bag_help,
+    vehicle_type: req.body.vehicle_type
   });
 
-   console.log('newUser object test:', newUser);
+   console.log('newDriver object test:', newDriver);
 
-  newUser.save(function(err, user){
+  newDriver.save(function(err, driver){
     if (err) {
       res.status(500).send({
         status: 'Error',
@@ -44,16 +42,14 @@ router.post('/', function(req, res, next){
     } else {
       res.status(200).json({
         status: 'OK',
-        user: user
+        driver: driver
       });
     }
   });
 });
 
-/*this should only be for update of the entire profile,
-  since CC info is here */
 router.put('/', function(req, res, next){
-  User.findByIdAndUpdate(req.body.id, {
+  Driver.findByIdAndUpdate(req.body.id, {
     Auth0_id: req.body.auth0_id,
     _id: req.body.id,
     first: req.body.first,
@@ -61,56 +57,35 @@ router.put('/', function(req, res, next){
     phone: req.body.phone,
     email: req.body.email,
     zip: req.body.zip,
-    cc: req.body.cc,
-    ex_date: req.body.ex_date,
-    door_to_door: req.body.door_to_door,
-    wheelchair: req.body.wheelchair,
-    bag_help: req.body.bag_help
+    able_door_to_door: req.body.able_door_to_door,
+    able_wheelchair: req.body.able_wheelchair,
+    able_bag_help: req.body.able_bag_help,
+    vehicle_type: req.body.vehicle_type
   }, function(err, student) {
     if (err) console.log(err);
     res.json({
-      message: "User updated!",
+      message: "Driver updated!",
       id: req.body.id,
       newname: req.body.name
     })
   });
 });
 
-router.patch('/', function(req, res, next){
-  User.findByIdAndUpdate(req.body.id, {
-    Auth0_id: req.body.auth0_id,
-    _id: req.body.id,
-    first: req.body.first,
-    last: req.body.last,
-    phone: req.body.phone,
-    email: req.body.email,
-    zip: req.body.zip,
-    door_to_door: req.body.door_to_door,
-    wheelchair: req.body.wheelchair,
-    bag_help: req.body.bag_help
-  }, function(err, student) {
-    if (err) console.log(err);
-    res.json({
-      message: "User updated!",
-      id: req.body.id,
-      newname: req.body.name
-    })
-  });
-});
 
 router.delete('/', function(req, res, next){
-  User.findByIdAndRemove(req.body.id, function(err, user){
+  Driver.findByIdAndRemove(req.body.id, function(err, driver){
     if(err) {
       console.log('Error Deleting record: ', err);
     } else {
       res.json({
         status: 'deleted!',
-        user: user
+        driver: driver
       })
     }
   })
 });
 
 module.exports = router;
+
 
 
