@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var passport = require('passport');
+var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
 var User = require('../models/user')
 
 
 /* GET home page. */
-router.get('/:id', function(req, res, next) {
+router.get('/:id', ensureLoggedIn, function(req, res, next) {
   id = req.params.id;
   User.findById(id, function(err, driver){
     if (err) {
