@@ -1,25 +1,63 @@
-/* google drive folder for assets
+            /* google drive folder for assets
 https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
 */
 
-html, body {
-  background-color: white;
-}
+            html, body {
+              background-color: white;
+            }
 
-@@font-face {
-  font-family: 'DINPro-Medium'sans-serif;
-  src: url('DINPro-Medium_13936.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+            nav .content-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+            }
 
-.container .jumbotron {
-background-size: cover;
-background-repeat: no-repeat;
-border-radius: 0px;
+            .content-wrapper {
+              max-width: 950px;
+              margin: 0 auto;
+              padding: 0 1rem;
+            }
 
-}
+            @media only screen and (max-width:700px)
+            .open-menu {
+              display: flex;
+              max-height: 500px;
+              transition: max-height 0.25s
+              ease-in;
+            }
 
-.navbar, .container {
-  background-color: white;
-}
+            @media only screen and (max-width: 700px)
+            .nav-links a {
+              display: inline-block;
+              align-self: flex-start;
+              margin-left: 0;
+              font-size: 2px;
+              padding: 1px 0;
+            }
+
+            @media only screen and (max-width: 700px)
+            .mobile-nav {
+              display: inline-block;
+              margin-left: auto;
+            }
+
+            a, a:hover, a:focus, a:active, a.active {
+              outline: none;
+              text-decoration: none;
+              transition: all .3s ease-in-out;
+            }
+
+            .fa {
+              display: inline-block;
+              font: normal;
+              font-size: inherit;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+            }
+
+            .hero-photo img {
+              background-repeat: no-repeat;
+              border-radius: 0px;
+              margin-bottom: 30px;
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
