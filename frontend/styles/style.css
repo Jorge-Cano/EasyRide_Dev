@@ -13,55 +13,13 @@ html, body {
   font-style: normal;
 }
 
-.col-md-3 {
-  background-color: #D8D8D8;
+.container .jumbotron {
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 0px;
+
 }
 
-.logo, img {
-  float: left;
-  width: 128px;
-  height: 66px;
-}
-
-.nav-links {
-  text-align: center;
-  display: block;
-  padding-left: 45px;
-  margin: 0 20px;
-}
-
-.nav-links a {
-  padding: 14px;
-  font-size: 20px;
-}
-
-button {
-  font-size: 20px;
-  border-radius: 15px;
-  background-color: #7AB1F1;
-  color: white;
-  padding: 15px 20px;
-  display: inline-block;
-  border: none;
-}
-
-.sign-in button {
-  float: right;
-}
-
-.hero-photo {
-  height: 400px;
-  background-image: url('http://www.hardwickagriculture.org/blog/wp-content/uploads/placeholder.jpg');
-  background-size: 100%;
-  border: 1px solid red;
-}
-
-.learn-more {
-  text-align: left;
-  display: inline-block;
-}
-
-.account {
-  text-align: right;
-  display: inline-block;
+.navbar, .container {
+  background-color: white;
 }
