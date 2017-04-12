@@ -2,63 +2,119 @@
 https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
 */
 
-            html, body {
-              background-color: white;
-            }
+              body {
+                margin: 0;
+                background-color: #D8D8D8;
+              }
 
-            nav .content-wrapper {
-              display: flex;
-              flex-wrap: wrap;
-            }
+              nav {
+                width: 100%;
+              }
 
-            .content-wrapper {
-              max-width: 950px;
-              margin: 0 auto;
-              padding: 0 1rem;
-            }
+              .logo img {
+                height: 200px;
+                width: auto;
+                max-width: 300px;
+                max-height: 300px;
+                padding-left: 45px;
+                border: 5px solid black;
+                border-radius: 99px 45px 45px 99px;
 
-            @media only screen and (max-width:700px)
-            .open-menu {
-              display: flex;
-              max-height: 500px;
-              transition: max-height 0.25s
-              ease-in;
-            }
+              }
 
-            @media only screen and (max-width: 700px)
-            .nav-links a {
-              display: inline-block;
-              align-self: flex-start;
-              margin-left: 0;
-              font-size: 2px;
-              padding: 1px 0;
-            }
+              nav h2 {
+                font-size: 45px;
+                float: right;
+                padding-right: 30px;
+              }
 
-            @media only screen and (max-width: 700px)
-            .mobile-nav {
-              display: inline-block;
-              margin-left: auto;
-            }
+              h1 {
+                font-size: 50px;
+                text-align: center;
+              }
 
-            a, a:hover, a:focus, a:active, a.active {
-              outline: none;
-              text-decoration: none;
-              transition: all .3s ease-in-out;
-            }
+              li {
+                list-style: none;
+                text-align: center;
+                font-size: 40px;
 
-            .fa {
-              display: inline-block;
-              font: normal;
-              font-size: inherit;
-              text-rendering: auto;
-              -webkit-font-smoothing: antialiased;
-            }
+              }
 
-            .hero-photo img {
-              background-repeat: no-repeat;
-              border-radius: 0px;
-              margin-bottom: 30px;
-              padding-top: 30px;
-              padding-bottom: 30px;
-            }
 
+
+              .relative {
+                position: relative;
+              }
+
+              .relative img {
+                border-radius: 0px;
+                margin-bottom: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 82%;
+                margin-left: 90px;
+                border:
+              }
+
+              .inside-text {
+                position: absolute;
+                bottom: 65px;
+                font-size: 24px;
+                font-family: "vedana";
+                background: rgba(251, 251, 251, 0.5);
+                padding: 10px 20px;
+                width: 100%;
+                text-align: center;
+              }
+              /* Full-width input fields */
+
+              input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+              }
+              /* Set a style for all buttons */
+
+              button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+              }
+              /* Extra styles for the cancel button */
+
+              .cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+              }
+              /* Float cancel and signup buttons and add an equal width */
+
+              .cancelbtn, .signupbtn {
+                float: left;
+                width: 50%;
+              }
+              /* Add padding to container elements */
+
+              .container {
+                padding: 16px;
+              }
+              /* Clear floats */
+
+              .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              /* Change styles for cancel button and signup button on extra small screens */
+
+              @media screen and (max-width: 300px) {
+                .cancelbtn, .signupbtn {
+                  width: 100%;
+                }
+              }
