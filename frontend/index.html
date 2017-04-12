@@ -14,7 +14,9 @@
   <title>Easy Ride</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
+
   <script src="https://use.fontawesome.com/51e385cd66.js"></script>
+
 
 </head>
 
@@ -23,30 +25,43 @@
 
 
   <nav>
-    <div class="content-wrapper">
-      <span class="logo">
+    <span class="logo">
         <img src="imagelogo.png" alt="logo">
       </span>
-      <span class="nav-links">
-        <a href="#about" class="">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#testimonials">Quotes</a>
-        <a href="#contact">Contact</a>
-      </span>
-      <div class="mobile-nav">
-        <a href="" class="hamburger"><i class="fa fa-bars"></i></a>
+
+
+    <h2>Home</h2>
+    <div data-role="header">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#getaride">Get A Ride</a></li>
+          <li><a href="#scheduledrides">Scheduled Rides</a></li>
+          <li><a href="#myprofile">My Profile</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+
+          <li><a href="#contactus">Contact Us</a></li>
+          <li><a href="#help">Help</a></li>
+        </ul>
       </div>
     </div>
+
   </nav>
 
 
 
 
 
-        <div class="hero-photo">
-          <h3>Get where you're going</h3>
-          <img src="oldcouple.jpg" alt="oldcouple">
+  <div class="relative">
+    <img src="oldcouple.jpg" alt="oldcouple">
 
+    <p class="inside-text">Get Where You're Going</p>
+
+
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
 
 
 
@@ -57,22 +72,44 @@
       <button type="submit" id="btn-login">Sign In</button>
       <button type="submit" id="btn-logout" style="display:none;">Sign Out</button>
 
+          <h2>Our Mission</h2>
+
+          <p>A Human Being's right to life implies his right to have the free and unrestricted access of all things, which may be necessary to assist him realize his fullest mental, spiritual, and physical potential. In other words, every human being has
+            the right to be rich and enjoy everything life has to offer.</p>
+        </div>
+      </div>
+    </div>
 
 
 
 
-          <h2>Log In</h2>
-          <form action>
 
-            <label for="email">Email:</label>
-            <input type="text" placeholder="you@example.com" id="email">
-            <label for="password"></label>
-            <input type="text" placeholder="New Password" id="password">
-            <button class="sign">Sign In</button>
-            <button class="signup">Sign Up</button>
 
-          </form>
 
+
+
+
+    <h1>Log In</h1>
+
+    <form action="/action_page.php">
+      <div class="container">
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <input type="checkbox" checked="checked"> Remember me
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
 
 
 
