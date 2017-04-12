@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* google drive folder for assets
 https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
 */
@@ -5,3 +6,68 @@ https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
 html, body {
 
 }
+=======
+            /* google drive folder for assets
+https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
+*/
+
+            html, body {
+              background-color: white;
+            }
+
+            nav .content-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+            }
+
+            .content-wrapper {
+              max-width: 950px;
+              margin: 0 auto;
+              padding: 0 1rem;
+            }
+
+            @media only screen and (max-width:700px)
+            .open-menu {
+              display: flex;
+              max-height: 500px;
+              transition: max-height 0.25s
+              ease-in;
+            }
+
+            @media only screen and (max-width: 700px)
+            .nav-links a {
+              display: inline-block;
+              align-self: flex-start;
+              margin-left: 0;
+              font-size: 2px;
+              padding: 1px 0;
+            }
+
+            @media only screen and (max-width: 700px)
+            .mobile-nav {
+              display: inline-block;
+              margin-left: auto;
+            }
+
+            a, a:hover, a:focus, a:active, a.active {
+              outline: none;
+              text-decoration: none;
+              transition: all .3s ease-in-out;
+            }
+
+            .fa {
+              display: inline-block;
+              font: normal;
+              font-size: inherit;
+              text-rendering: auto;
+              -webkit-font-smoothing: antialiased;
+            }
+
+            .hero-photo img {
+              background-repeat: no-repeat;
+              border-radius: 0px;
+              margin-bottom: 30px;
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
+>>>>>>> 5ecd5a9ac312d0fe84d0b3c5e0f532f1065a7057
