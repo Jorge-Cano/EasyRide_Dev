@@ -1,172 +1,227 @@
 
-              /* google drive folder for assets
+/* google drive folder for assets
 https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
 */
 
 
-              body {
-                margin: 0;
-                background-color: #FFFFFF;
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  padding-top: 70px;
 
-              }
+}
 
+/*Stuff Jon is adding Thursday*/
+.navbar-inverse {
+  background-color: white;
+  border: 0;
+}
 
-              .dropbtn {
-                background-color: #4CAF50;
-                color: white;
-                padding: 16px;
-                font-size: 16px;
-                border: none;
-                cursor: pointer;
-              }
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #4A4A4A;
+}
 
-              .dropbtn:hover, .dropbtn:focus {
-                background-color: #3e8e41;
-              }
+.jumbotron .container {
+  display: flex;
+    align-items: top;
+    justify-content: center;
+}
 
-              .dropdown {
-                position: relative;
-                display: inline-block;
-              }
+.jumbotron {
+  background-image:url("../oldcouple.jpg");
+  background-size:100%;
+  color: #FFFFFF;
+}
 
-              .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                overflow: auto;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
-              }
+.jumbotron h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 
-              .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-              }
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #fff;
+}
 
-              .dropdown a:hover {
-                background-color: #f1f1f1
-              }
+.login {
+  padding: 20px;
+  margin: auto 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 
-              .show {
-                display: block;
-              }
-              /*header {
-                display: inline-block;
-                font-size: 12px;
-              }
+.navbar-nav {
+  text-align: right;
+}
 
-              span {
-                padding-left: 20px;
-              }
+.btn-success {
+  background-color: #00D40B;
+}
 
-              a {
-                color: #336699;
-              }
+.btn-default a {
+  color: black;
+}
+#
+/*End stuff Jon is adding Thursday */
 
-              nav {
-                width: 100%;
-              }
+/*
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-              .navbar-header img {
-                height: 150px;
-                width: auto;
-                max-width: 300px;
-                max-height: 300px;
-              }
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
 
-              nav h2 {
-                font-size: 45px;
-                float: right;
-                padding-right: 30px;
-              }*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-              h1 {
-                font-size: 50px;
-                text-align: center;
-              }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-              li {
-                list-style: none;
-                text-align: center;
-                font-size: 40px;
-              }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-              .relative {
-                position: relative;
-              }
+.dropdown a:hover {
+  background-color: #f1f1f1
+}
 
-              .relative img {
-                border-radius: 0px;
-                margin-bottom: 30px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                width: 82%;
-                margin-left: 90px;
-                border:
-              }
+.show {
+  display: block;
+}
+/*header {
+  display: inline-block;
+  font-size: 12px;
+}
 
-              .inside-text {
-                position: absolute;
-                bottom: 65px;
-                font-size: 24px;
-                font-family: "vedana";
-                background: rgba(251, 251, 251, 0.5);
-                padding: 10px 20px;
-                width: 100%;
-                text-align: center;
-              }
-              /* Full-width input fields */
+span {
+  padding-left: 20px;
+}
 
-              input[type=text], input[type=password] {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                box-sizing: border-box;
-              }
-              /* Set a style for all buttons */
+a {
+  color: #336699;
+}
 
-              button {
-                background-color: #4CAF50;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-              }
-              /* Extra styles for the cancel button */
+nav {
+  width: 100%;
+}
 
-              .cancelbtn {
-                padding: 14px 20px;
-                background-color: #f44336;
-              }
-              /* Float cancel and signup buttons and add an equal width */
+.navbar-header img {
+  height: 150px;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+}
 
-              .cancelbtn, .signupbtn {
-                float: left;
-                width: 50%;
-              }
-              /* Add padding to container elements */
+nav h2 {
+  font-size: 45px;
+  float: right;
+  padding-right: 30px;
+}*/
 
-              .container {
-                padding: 16px;
-              }
-              /* Clear floats */
+/*Commenting out below - Jon */
 
-              .clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
-              }
-              /* Change styles for cancel button and signup button on extra small screens */
+/*h1 {
+  font-size: 50px;
+  text-align: center;
+}
 
-              @media screen and (max-width: 300px) {
-                .cancelbtn, .signupbtn {
-                  width: 100%;
-                }
-              }
+li {
+  list-style: none;
+  text-align: center;
+  font-size: 40px;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative img {
+  border-radius: 0px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 82%;
+  margin-left: 90px;
+  border:
+}
+
+.inside-text {
+  position: absolute;
+  bottom: 65px;
+  font-size: 24px;
+  font-family: "vedana";
+  background: rgba(251, 251, 251, 0.5);
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+/* Full-width input fields */
+/*
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+ Set a style for all buttons
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+ Extra styles for the cancel button
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+/*
+.container {
+  padding: 16px;
+}
+/* Clear floats */
+
+/*.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+/* Change styles for cancel butt*/*/on and signup button on extra small screens */*/
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}*/
