@@ -1,198 +1,133 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/2.0.6/glide.min.js"></script>
-  <title>Easy Ride</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <script type="text/javascript" src="styles/main.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <script src="https://use.fontawesome.com/51e385cd66.js"></script>
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
 
-
-
-
-
-      <!-- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!Brand and toggle get grouped for better mobile display -->
-    <!-- <div class="navbar-header">
-      <img src="imagelogo.png" alt="logo">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-    </div> --> -
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="imagelogo.png" alt="logo">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" id="getaride">Get A Ride</a></li>
+                    <li><a href="#" id="myscheduledrides">Scheduled Rides</a></li>
+                    <li><a href="#" id="myprofile">My Profile</a></li>
+                    <li><a href="#" id="aboutus">About Us</a></li>
+                    <li><a href="#" id="help">Help</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown"> -->
-          <!-- <a href="#" class="glyphicon glyphicon-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <!-- /.container -->
+    </nav>
 
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><! /.navbar-collapse -->
-  <!-- </div><!/.container-fluid -->
-<!-- </nav>
+  <!-- Page Content -->
+  <div id="filler">
 
 
-    <! <h2>Home</h2>
-=======
-
-
-  <nav>
-    <span class="logo">
-        <img src="imagelogo.png" alt="logo">
-      </span>
-
-
-    <h2>Home</h2>
->>>>>>> master
-    <div data-role="header">
-      <div data-role="navbar">
-        <ul>
-          <li><a href="#getaride">Get A Ride</a></li>
-          <li><a href="#scheduledrides">Scheduled Rides</a></li>
-          <li><a href="#myprofile">My Profile</a></li>
-          <li><a href="#aboutus">About Us</a></li>
-
-          <li><a href="#contactus">Contact Us</a></li>
-          <li><a href="#help">Help</a></li>
-        </ul>
-      </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Get Where You're Going</h1>
+        </div>
     </div>
 
-  </nav> -->
-
-
-
-
-
-  <div class="relative">
-    <img src="oldcouple.jpg" alt="oldcouple">
-
-    <p class="inside-text">Get Where You're Going</p>
-
-
-  </div>
-
+    <!--mission statement-->
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-
-
-
-      <!-- Auth 0 Login Code -->
-      <img alt="avatar" id="avatar" style="display:none;">
-      <p>Welcome <span id="nickname"></span></p>
-      <button type="submit" id="btn-login">Sign In</button>
-      <button type="submit" id="btn-logout" style="display:none;">Sign Out</button>
-
           <h2>Our Mission</h2>
-
-          <p>A Human Being's right to life implies his right to have the free and unrestricted access of all things, which may be necessary to assist him realize his fullest mental, spiritual, and physical potential. In other words, every human being has
-            the right to be rich and enjoy everything life has to offer.</p>
+            <p>If we had a mission this is where it would go.  But I'm not sure we actually have a mission outside of trying
+            to get this done before dawn.</p>
         </div>
-      </div>
+
+
+<!-- LOGIN here -->
+
+        <div class="col-md-6 ">
+          <div class="text-center">
+            <h2>Log In</h2>
+          </div>
+          <div class="login">
+
+            Email:
+            <input type="text" class="form-control" placeholder="youremail@email.com">
+            Password:
+            <input type="password" class="form-control" placeholder="">
+            <br><br><br>
+            <a href="#" id=""><button type="button" class="btn btn-success btn-lg btn-block" id="btn-login">Sign In</button></a>
+            <br>
+            <a href="#" id="signupform"><button type="button" class="btn btn-default btn-lg btn-block">Sign Up</a>
+
+          </div>
+
+
+          <!-- Auth 0 Login Code-->
+          <!-- <img alt="avatar" id="avatar" style="display:none;">
+          <p> <span id="nickname"></span></p>
+          <a href="#" id=""><button type="button" class="btn btn-success btn-lg btn-block" id="btn-login">Sign In</button></a>
+          <br>
+          <a href="#" id="signupform"><button type="button" class="btn btn-default btn-lg btn-block">Sign Up</a>
+          <button type="submit" id="btn-logout" style="display:none;">Sign Out</button> -->
+        </div>
     </div>
+  </div>
 
 
 
 
+        <!-- /.row -->
+
+    <!-- div -->
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- loading local JS -->
+    <script src="js/test_components.js"></script>
 
-
-
-    <h1>Log In</h1>
-
-    <form action="/action_page.php">
-      <div class="container">
-        <label><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <label><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-        <input type="checkbox" checked="checked"> Remember me
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-        <div class="clearfix">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign Up</button>
-        </div>
-      </div>
-    </form>
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.auth0.com/js/lock/10.13/lock.min.js"></script>
-  <script src="js/auth0-variables.js"></script>
-  <script src="js/app.js"></script>
-<script src="main.js"></script>
 </body>
 
 </html>
