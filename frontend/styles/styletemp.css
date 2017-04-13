@@ -1,0 +1,13 @@
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  padding-top:70px;
+}
+.navbar-inverse {
+  background-color: white;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #4A4A4A;
+}
