@@ -13,7 +13,7 @@ window.addEventListener('load', function() {
   btn_logout.addEventListener('click', function() {
     logout();
   });
-
+// Auth0
   lock.on("authenticated", function(authResult) {
     lock.getProfile(authResult.idToken, function(error, profile) {
       if (error) {
@@ -21,6 +21,8 @@ window.addEventListener('load', function() {
         return;
       }
       localStorage.setItem('id_token', authResult.idToken);
+      //Below is in the Growler App stringify profile token?
+   // localStorage.setItem('profile', JSON.stringify(profile));
       // Display user information
       show_profile_info(profile);
     });
