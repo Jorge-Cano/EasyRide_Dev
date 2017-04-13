@@ -22,7 +22,7 @@ router.get('/:id', ensureLoggedIn, function(req, res, next) {
 
 router.post('/', function(req, res, next){
   var newUser = new User({
-    Auth0_id: req.body.auth0_id,
+    Auth0_id: req.user.identities[0].user_id,
     first: req.body.first,
     last: req.body.last,
     phone: req.body.phone,

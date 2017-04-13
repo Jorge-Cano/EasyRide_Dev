@@ -44,7 +44,8 @@ window.addEventListener('load', function() {
       }
       localStorage.setItem('id_token', authResult.idToken);
       //Below is in the Growler App stringify profile token?
-   // localStorage.setItem('profile', JSON.stringify(profile));
+      localStorage.setItem('profile', JSON.stringify(profile));
+      console.log(localStorage.getitem("profile"));
       // Display user information
       show_profile_info(profile);
     });
