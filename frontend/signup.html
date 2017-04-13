@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="public/images/logo.png" alt="Easyride" height="120px" width="120px">
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Get a Ride</a></li>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><button type="button" class="btn-primary btn-lg btn navbar-button">Sign In</button></li>
+        </ul>
+    </nav>
+  </div>
+    <div class="basic-info">
+      <h1>Basic Info</h1>
+    <form> First Name:
+        <input type="text" name="firstname">
+        Last Name: <input type="text" name="lastname">
+        Email: <input type="text" name="email">
+        Phone: <input type="number" name="phone">
+        Password: <input type="text" name="password">
+    </form>
+  </div>
+    <div class="container-fluid">
+      <div class="pref">
+        <div class="col-md-4">
+            <p>Door to Door</p>
+            <img src="public/images/door to door.png" alt="Easyride" height="40px" width="40px">
+            <label class="switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+            </label>
+          </div>
+        <div class="col-md-4">
+          <p>Wheelchair Accessible</p>
+          <img src="public/images/wheelchair_pref.png" alt="Easyride" height="50px" width="50px">
+          <label class="switch">
+          <input type="checkbox">
+          <div class="slider round"></div>
+          </label>
+        </div>
+        <div class="col-md-4">
+          <p>Help with Bags</p>
+            <img src="public/images/bags.png" alt="Easyride" height="40px" width="40px">
+          <label class="switch">
+          <input type="checkbox">
+          <div class="slider round"></div>
+          </label>
+        </div>
+        <div class="col-md-4">
+          <p>Round Trip</p>
+            <img src="public/images/round trip.png" alt="Easyride" height="40px" width="40px">
+          <label class="switch">
+          <input type="checkbox">
+          <div class="slider round"></div>
+        </label>
+      </div>
+      <div class="col-md-4">
+        <p>One Way Trip</p>
+        <img src="public/images/one way.png" alt="Easyride" height="40px" width="40px">
+        <label class="switch">
+        <input type="checkbox">
+        <div class="slider round"></div><br>
+        </label>
+      </div>
+    </div>
+  <div class="container-fluid">
+    <div class="billing">
+      <form>
+          Credit Card #: <input type="number" name="creditcard">
+          Email: <input type="text" name="email">
+          CVV: <input type="number" name="cvv">
+          Zip Code: <input type="number" name="zipcode">
+      </form>
+    </div>
+  </div>
+    <footer class="footer">
+         <div class="container">
+           <ul class="nav navbar-nav">
+             <li><a href="#">Volunteer</a></li>
+             <li><a href="#">Contact</a></li>
+             <li><a href="#">Settings</a></li>
+             <li><a href="#">Terms</a></li>
+             <li><a href="#">Privacy Policy</a></li>
+           </ul>
+         </div>
+       </footer>
+  </body>
+</html>
