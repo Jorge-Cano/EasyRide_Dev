@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-
-
 var passport = require('passport');
 var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
 var User = require('../models/user')
@@ -24,7 +22,7 @@ router.get('/:id', ensureLoggedIn, function(req, res, next) {
 
 router.post('/', function(req, res, next){
   var newUser = new User({
-    Auth0_id: req.body.auth0_id,
+    Auth0_id: req.user.identities[0].user_id,
     first: req.body.first,
     last: req.body.last,
     phone: req.body.phone,

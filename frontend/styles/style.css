@@ -1,9 +1,6 @@
-
 /* google drive folder for assets
 https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
 */
-
-
 
               body {
                 margin: 0;
@@ -239,6 +236,19 @@ body {
   color: black;
 }
 
+
+.container h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#p {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px 25px;
+}
+
+#
 /*End stuff Jon is adding Thursday */
 
 /*
@@ -403,3 +413,5 @@ button {
     width: 100%;
   }
 }*/
+
+
