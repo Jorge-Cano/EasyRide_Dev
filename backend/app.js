@@ -20,8 +20,8 @@ var Auth0Strategy = require('passport-auth0');
 
 var app = express();
 
-// 2. Configure Lock, Auth0 Step SPA
-var lock = new Auth0Lock('cQGdAfq6ZAF2BZuLRx1TDrmU4D9NrhCU', 'jacinaustin.auth0.com');
+// // 2. Configure Lock, Auth0 Step SPA
+// var lock = new Auth0Lock('cQGdAfq6ZAF2BZuLRx1TDrmU4D9NrhCU', 'jacinaustin.auth0.com');
 
 // Configure Passport to use Auth0, multi page
 var strategy = new Auth0Strategy({
