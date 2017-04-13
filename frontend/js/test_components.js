@@ -82,12 +82,23 @@ $(document).ready(function() {
   // };
 
   function setHandlers(){
-    $('body').on('click', '#signup', function(e) {
-      e.preventDefault();
-      //lock.show();
-      console.log('Ive been clicked')
-      getPage('#signup');
-    });
+    pages = ['landing', 'signupform', 'profilesaved', 'myaccount', 'almostready', 'getaliveride', 'getaride', 'getascheduledride', 'myscheduledrides', 'rideisscheduled'];
+    for(var i = 0, x=pages.length; i< x; i++){
+      console.log(pages[i]);
+      page = pages[i];
+      console.log(page);
+      $('body').on('click', '#' + page, function(e){
+         e.preventDefault();
+            console.log('page', page)
+            getPage(event.target.id);
+      });
+    }
+
+      // $('body').on('click', '#signupform', function(e) {
+      //   e.preventDefault();
+      //   console.log('page')
+      //   getPage('signupform');
+      // });
 
     // $('.btn-logout').click(function(e) {
     //   e.preventDefault();
@@ -151,8 +162,11 @@ $(document).ready(function() {
   // };
 
     function getPage(page){
+      console.log('getPage page: ', page);
+      url = '/components/' + page + '.html';
+      console.log('THE URL: ', url)
     $.ajax({
-      url: '/components/signupform.html',
+      url: url,
       method: 'GET'
     }).done(function(response){
       console.log("im the response, motha fucka!", response)
@@ -165,9 +179,7 @@ $(document).ready(function() {
 
 
   function main(){
-  // retrieve_profile();
      setHandlers();
-
    };
 
    main();
