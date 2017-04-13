@@ -170,3 +170,13 @@ https://drive.google.com/drive/folders/0B2mjfRTiYPWIM3NmMldHYTg4X2c
                   width: 100%;
                 }
               }
+
+              .col-sm-6 img {
+                width: 65%;
+                height: 50%;
+              }
+
+              .col-sm-6 h2 {
+                margin-bottom: 230px;
+                font-size: 42px;
+              }
