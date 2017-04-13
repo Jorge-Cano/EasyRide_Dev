@@ -1,4 +1,5 @@
-  function setHandlers(){
+  $(function(){
+    function setHandlers(){
     pages = ['landing', 'signupform', 'profilesaved', 'myaccount', 'almostready', 'getaliveride', 'getaride', 'getascheduledride', 'myscheduledrides', 'rideisscheduled'];
     for(var i = 0, x=pages.length; i< x; i++){
       console.log(pages[i]);
@@ -7,7 +8,7 @@
       $('#filler').on('click', '#' + page, function(e){
          e.preventDefault();
             console.log('page', page);
-            console.log('event handler targe: ', event.target.id);
+            console.log('event handler target: ', event.target.id);
             getPage(event.target.id);
       });
     }
@@ -22,8 +23,8 @@
       method: 'GET'
     }).done(function(response){
       console.log("im the response, motha fucka!", response)
-      $('div').empty();
-      $('div').prepend(response);
+      $('#filler').empty();
+      $('#filler').prepend(response);
     }).fail(function(error){
       console.error(error);
     });
