@@ -24,7 +24,7 @@
     }).done(function(response){
       console.log("im the response, motha fucka!", response)
       $('#filler').empty();
-      $('#filler').prepend(response);
+      $('#filler').append(response);
     }).fail(function(error){
       console.error(error);
     });

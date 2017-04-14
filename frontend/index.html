@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Easy Ride</title>
 
     <!-- Bootstrap Core CSS -->
 
@@ -101,11 +101,11 @@
             Password:
             <input type="password" class="form-control" placeholder="">
             <br><br><br>
-            <a href="#" id="myscheduledrides"><button type="button" class="btn btn-success btn-lg btn-block" id="myscheduledrides">Scheduled Rides</button></a>
+            <button type="button" class="btn btn-success btn-lg btn-block" id="signupform">Sign In
             <br>
-            <a href="#" id="signupform"><button type="button" class="btn btn-default btn-lg btn-block">Sign Up</a>
-
-          </div>
+            <button type="button" id="signupform" class="btn btn-default btn-lg btn-block">Sign Up
+        </div>
+        <br>
 
 
           <!-- Auth 0 Login Code-->
@@ -136,6 +136,20 @@
 
     <!-- loading local JS -->
     <script src="js/test_components.js"></script>
+
+    <!--
+    :Flow:
+
+      landing-> signupform ->profilesaved -> myaccount
+
+      myaccount -> getaride -> getascheduledride -> rideisscheduled
+      myaccount -> getaride -> getaliveride
+      myaccount -> myscheduledrides
+
+    :optional bonus world:
+      getaliveride -> findingdriver -> acceptride -> driverenroute ->
+
+    -->
 
 </body>
 
