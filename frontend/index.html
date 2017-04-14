@@ -92,11 +92,11 @@
             Password:
             <input type="password" class="form-control" placeholder="">
             <br><br><br>
-            <a href="#" id=""><button type="button" class="btn btn-success btn-lg btn-block" id="btn-login">Sign In</button></a>
+            <button type="button" class="btn btn-success btn-lg btn-block" id="btn-login">Sign In
             <br>
-            <a href="#" id="signupform"><button type="button" class="btn btn-default btn-lg btn-block">Sign Up</a>
-
-          </div>
+            <button type="button" id="signupform" class="btn btn-default btn-lg btn-block">Sign Up
+        </div>
+        <br>
 
 
           <!-- Auth 0 Login Code-->
@@ -127,6 +127,20 @@
 
     <!-- loading local JS -->
     <script src="js/test_components.js"></script>
+
+    <!--
+    :Flow:
+
+      landing-> signupform ->profilesaved -> myaccount
+
+      myaccount -> getaride -> getascheduledride -> rideisscheduled
+      myaccount -> getaride -> getaliveride
+      myaccount -> myscheduledrides
+
+    :optional bonus world:
+      getaliveride -> findingdriver -> acceptride -> driverenroute ->
+
+    -->
 
 </body>
 
